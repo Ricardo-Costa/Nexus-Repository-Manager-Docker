@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  nexus:
+    image: sonatype/nexus3
+    container_name: nexus
+    network_mode: host
+    volumes:
+      - ./nexus_data:/var/www/nexus_data
